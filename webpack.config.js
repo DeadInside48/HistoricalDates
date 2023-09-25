@@ -53,21 +53,13 @@ module.exports = {
       {
         test: /\.css$/i,
         use:[MiniCssExtractPlugin.loader, 'css-loader'],
-        // exclude: /node_modules/,
       },
       {
         test: /\.([cm]?ts|tsx)$/,
         use: ['babel-loader', 'ts-loader'],
         exclude: /node_modules/,
       },
-      // {
-      //   test: /\.(png|woff|woff2|eot|ttf|svg)$/,
-      //   use: [
-      //     {
-      //     loader: 'url-loader?limit=100'
-      //     }
-      //   ],
-      // },
+
     ]
   }
 }

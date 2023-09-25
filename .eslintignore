@@ -1,5 +1,5 @@
 dist
 node_modulees
 *.json
-# .eslintrc.cjs
+.eslintrc.cjs
 webpack.config.js
