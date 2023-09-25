@@ -1,0 +1,77 @@
+@use '/src/index.scss';
+
+.center-point {
+  transition: transform 1.25s;
+
+  .point__wrapper {
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    margin: -28px 0 0 -28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 1.25s;
+
+    .container {
+      width: 6px;
+      height: 6px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      background-color: index.$default-color;
+      border-radius: 50%;
+      border: 1px solid transparent;
+      transition: transform 1.25s, height .5s, width .5s, margin .5s, background-color .5s, border .5s;
+
+      span {
+        user-select: none;
+        font-size: 20px;
+        color: index.$default-color;
+      }
+
+      .thema {
+        width: 120px;
+        position: absolute;
+        cursor: default;
+        left: 75px;
+        bottom: 15px;
+        transition: transform .5s;
+        transform: scale(0);
+      }
+
+      .number-slide {
+        transition: opacity .5s;
+        opacity: 0;
+      }
+    }
+
+    .container:hover {
+      width: 56px;
+      height: 56px;
+      cursor: pointer;
+      background-color: #F4F5F9;
+      border: 1px solid rgba($color: #303E58, $alpha: .5);
+
+      .number-slide {
+        opacity: 1;
+      }
+    }
+
+    .container__active {
+      width: 56px;
+      height: 56px;
+      background-color: #F4F5F9;
+      border: 1px solid rgba($color: #303E58, $alpha: .5);
+
+      .thema {
+        transform: scale(1);
+      }
+
+      .number-slide {
+        opacity: 1;
+      }
+    }
+  }
+}

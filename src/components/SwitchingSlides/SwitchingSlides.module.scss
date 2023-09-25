@@ -1,0 +1,17 @@
+@use '/src/index.scss';
+
+.switching-slides {
+  position: absolute;
+  bottom: 200px;
+  left: 80px;
+  color: index.$default-color;
+}
+
+@media (max-width: 320px) {
+  .switching-slides {
+    order: 3;
+    bottom: 15px;
+    left: 0;
+    z-index: 999;
+  }
+}

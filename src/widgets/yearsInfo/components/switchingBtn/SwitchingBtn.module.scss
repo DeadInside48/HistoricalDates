@@ -1,0 +1,23 @@
+.btn__wrapper {
+  min-width: 80px;
+  min-height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 0px 15px rgba(56, 119, 238, 0.10);
+  }
+}
+
+@media (max-width: 320px) {
+  .btn__wrapper {
+    display: none;
+  }
+}

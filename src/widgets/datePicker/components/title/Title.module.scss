@@ -1,0 +1,39 @@
+@use '/src/index.scss';
+
+.title {
+  top: 72px;
+  left: 0;
+  position: absolute;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+
+  .gradient-line {
+    height: 100%;
+    width: 5px;
+    background: linear-gradient(#3877EE, #EF5DA8);
+  }
+
+  .title__name {
+    max-width: 356px;
+    font-size: 56px;
+    font-weight: 700;
+    color: index.$default-color;
+  }
+}
+
+@media (max-width: 320px) {
+  .title {
+    position: static;
+    height: auto;
+    .gradient-line {
+      display: none;
+    }
+
+    .title__name{
+      font-size: 20px;
+    }
+  }
+}

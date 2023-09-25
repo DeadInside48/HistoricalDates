@@ -1,0 +1,17 @@
+.swiper {
+  width: 100%;
+}
+
+.swiper-slide {
+  height: auto;
+}
+
+@media (max-width: 320px) {
+  .swiper {
+    height: 200px;
+  }
+
+  .swiper-pagination {
+    margin-bottom: 15px;
+  }
+}

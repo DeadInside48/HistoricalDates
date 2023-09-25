@@ -1,0 +1,13 @@
+.switching-slides__pagination {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 320px) {
+  .switching-slides__pagination {
+    margin-bottom: 10px;
+  }
+}

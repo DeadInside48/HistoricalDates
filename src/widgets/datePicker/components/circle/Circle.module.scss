@@ -1,0 +1,25 @@
+@use '/src/index';
+
+.circle {
+  width: 530px;
+  height: 530px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  border: 1px solid rgba($color: index.$default-color, $alpha: .2);
+  border-radius: 50%;
+
+  .line__horizontal {
+    width: 100vw;
+    max-width: 1440px;
+    position: absolute;
+    border-top: 1px solid rgba($color: index.$default-color, $alpha: .1);
+  }
+}
+
+@media (max-width: 320px) {
+  .circle {
+    display: none;
+  }
+}

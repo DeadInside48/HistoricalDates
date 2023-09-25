@@ -1,0 +1,25 @@
+.years-interval {
+  font-size: 200px;
+  position: absolute;
+  font-weight: 700;
+  user-select: none;
+  display: flex;
+  gap: 30px;
+
+  .start-year {
+    color: #5D5FEF;
+  }
+
+  .end-year {
+    color: #EF5DA8;
+  }
+}
+
+@media (max-width: 320px) {
+  .years-interval {
+    width: 100%;
+    font-size: 56px;
+    position: static;
+    justify-content: center;
+  }
+}
